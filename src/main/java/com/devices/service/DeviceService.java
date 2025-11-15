@@ -6,7 +6,6 @@ import com.devices.dto.PatchDeviceRequest;
 import com.devices.dto.UpdateDeviceRequest;
 import com.devices.entity.Device;
 import com.devices.entity.DeviceState;
-import com.devices.exception.DeviceInvalidStateException;
 import com.devices.exception.DeviceNotFoundException;
 import com.devices.exception.InvalidDeviceOperationException;
 import com.devices.repository.DeviceRepository;
