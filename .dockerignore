@@ -1,0 +1,38 @@
+# Git
+.git
+.gitignore
+
+# Maven
+target/
+.m2/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Documentation
+README.md
+CONTRIBUTING.md
+*.md
+
+# Docker
+Dockerfile*
+docker-compose.yml
+.docker/
+
+# Node (if used)
+node_modules/
+npm-debug.log
