@@ -477,10 +477,10 @@ mvn failsafe:integration-test failsafe:verify
 - [ ] Add API versioning strategy
 
 ### Monitoring
-- [ ] Spring Boot Actuator endpoints
 - [ ] Distributed tracing (Spring Cloud Sleuth)
 - [ ] Metrics collection (Micrometer/Prometheus)
 - [ ] Centralized logging (ELK stack)
+- [ ] Advanced health checks and metrics dashboards
 
 ### Database
 - [ ] Database migration tool (Flyway/Liquibase)
@@ -504,12 +504,14 @@ mvn failsafe:integration-test failsafe:verify
 
 ## Known Limitations
 
-1. **No Authentication**: API is currently open (designed for evaluation purposes)
+1. **No Authentication/Authorization**: API is currently open (designed for evaluation purposes)
 2. **DDL Auto Create-Drop**: Database schema recreated on startup in dev/test profiles
 3. **No Soft Delete**: Deletions are permanent
 4. **Limited Audit Trail**: Only creation time is tracked
+5. **No Caching**: All queries directly hit the database
+6. **No Optimistic Locking**: No concurrent update protection
 
-These are intentional simplifications for the technical exercise. Production deployment would require the security and audit enhancements listed in the Future Enhancements section.
+These are intentional simplifications for the technical exercise. Production deployment would require the security, performance, and audit enhancements listed in the Future Enhancements section.
 
 ---
 
