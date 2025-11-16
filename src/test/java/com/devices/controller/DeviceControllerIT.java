@@ -19,7 +19,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @AutoConfigureMockMvc
 @DisplayName("DeviceController Integration Tests")
-class DeviceControllerIntegrationTest extends AbstractIntegrationTest {
+class DeviceControllerIT extends AbstractIntegrationTest {
 
     @Autowired
     private MockMvc mockMvc;
