@@ -349,8 +349,10 @@ mvn test -DskipITs -Dtest="DeviceServiceTest,DeviceControllerTest"
 
 ### Run Integration Tests
 ```bash
-mvn failsafe:integration-test -DskipUnitTests
+mvn failsafe:integration-test failsafe:verify
 ```
+
+**Note:** Integration tests use TestContainers and require Docker to be running.
 
 ### Generate Test Coverage Report
 ```bash
